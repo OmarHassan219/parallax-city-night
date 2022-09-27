@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+<h1>LOGO</h1>
+
+<ul>
+    <li><a class="active" href=""> Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Work</a></li>
+    <li><a href="">Contact</a></li>
+</ul>
+
+</header>
+
+<section>
+<img src="./2600.png" id="moon" alt="">
+<img src="./2634500.png" id="stars" alt="">
+<img src="./2820.png" id="ship" alt="">
+<img src="./262300.png" id="build" alt="">
+<img src="./384.png" id="shoot" alt="">
+</section>
+
+
+<div class="sec">
+    <h1>Parallex Scrolling Effect</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, velit! Eaque iure suscipit harum iste. Maiores ex inventore magnam nisi. Voluptas id ullam dolore, suscipit a fugiat excepturi. Doloribus sit exercitationem libero inventore optio ducimus et nostrum tenetur, consequatur, voluptas deleniti laborum commodi, voluptates laudantium similique vel officia voluptatum molestiae?</p>
+</div>
+
+
+<script>
+let stars = document.querySelector("#stars");
+let moon = document.querySelector("#moon");
+let ship = document.querySelector("#ship");
+let shoot = document.querySelector("#shoot");
+
+
+
+window.addEventListener("scroll" , function(){
+let value = window.scrollY ; 
+stars.style.left = -100 + value * 0.09 + "px";
+stars.style.top = -value * 0.01 + "px";
+
+ship.style.left = (130 - value*0.4) + "px";
+
+shoot.style.left = value * 1.5 + "px";
+
+})
+
+
+
+
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <header>
+        <h1>logo</h1>
+       
+        <ul>
+            <li>  <a class="active" href="">Home</a> </li>
+            <li> <a href="">About</a></li>
+            <li> <a href="">Work</a></li>
+            <li> <a href="">Contact</a></li>
+        
+        </ul>
+    
+    </header>
+
+<section>
+<img src="./2600.png" id="moon" alt="">
+<img src="./2634500.png" id="stars" alt="">
+<img src="./2820.png" id="ship" alt="">
+<img src="./262300.png" id="build" alt="">
+<img src="./384.png" alt="" id="shoot">
+</section>
+
+<div class="sec">
+
+<h1>parallex Scrolling Effects</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui provident, pariatur, culpa natus quod doloremque vero debitis architecto iusto, dolor molestiae illum ducimus voluptatibus quisquam eius dolorum minus ullam illo numquam tempora commodi officia id nobis itaque! Quisquam, magnam nulla corrupti nemo porro, et, quae magni iusto accusamus vero necessitatibus.</p>
+
+
+
+
+
+</div>
+
+<script>
+let stars = document.querySelector("#stars");
+let moon = document.querySelector("#moon");
+let ship = document.querySelector("#ship");
+let shoot = document.querySelector("#shoot");
+
+
+window.addEventListener("scroll" , function(){
+    let value = window.scrollY ; 
+stars.style.left = -100 + value * 0.09+ "px"
+stars.style.top =  -value * 0.01+ "px"
+
+
+
+    ship.style.left= (130 - value*0.4)  + "px" ; 
+
+
+shoot.style.left = value * 1.5+ "px" ; 
+
+
+
+
+})
+
+
+
+
+
+
+
+
+</script> -->
+
+
+</body>
+</html>
